@@ -1,9 +1,37 @@
+@import "https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap";
+
+:root {
+  --color-bg: #f60000;
+  --color-white: #eee;
+  --color-dark: #333;
+  --color-gide-r: #f00a;
+  --color-gide-b: #0f0a;
+  --color-gide-g: #00fa;
+  --font-family: "Alex Brush", cursive;
+  --icon-size: 50px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  /* background-image: url("https://media.istockphoto.com/vectors/burgers-seamless-pattern-fast-food-print-cartoon-hanburger-background-vector-id1279835520?k=20&m=1279835520&s=612x612&w=0&h=q3NdF7KDPtNoszN4c6WXibHTprBV4yYB7Oq2AZZPfAI="); */
+  background-color: var(--color-dark);
 }
 
 a {
