@@ -4,9 +4,9 @@
   --color-bg: #f60000;
   --color-white: #eee;
   --color-dark: #333;
-  --color-gide-r: #f00a;
-  --color-gide-b: #0f0a;
-  --color-gide-g: #00fa;
+  --color-guide-r: #f00a;
+  --color-guide-g: #0f0a;
+  --color-guide-b: #00fa;
   --font-family: "Alex Brush", cursive;
   --icon-size: 50px;
 }
