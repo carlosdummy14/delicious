@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -43,9 +44,11 @@ export default function Home() {
             <div className={styles.tiktok}></div>
           </a>
         </div>
-        <a href='#' className={styles.go}>
-          <div className={styles.icon}></div>
-        </a>
+        <Link href={'/menu/burgers'}>
+          <a className={styles.go}>
+            <div className={styles.icon}></div>
+          </a>
+        </Link>
       </footer>
     </div>
   )

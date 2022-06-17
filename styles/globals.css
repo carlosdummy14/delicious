@@ -9,6 +9,9 @@
   --color-guide-b: #00fa;
   --font-family: "Alex Brush", cursive;
   --icon-size: 50px;
+  --height-header: 6rem;
+  --height-footer: 6rem;
+  --height-main: calc(100vh - var(--height-header) - var(--height-footer));
 }
 
 html,

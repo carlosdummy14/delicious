@@ -1,4 +1,5 @@
 import styles from './layout.module.css'
+import NavItem from './nav-item'
 
 const Layout = ({ children }) => {
   return (
@@ -10,11 +11,12 @@ const Layout = ({ children }) => {
       <main className={styles.main}>{children}</main>
 
       <footer className={styles.footer}>
-        <nav>
-          <div>burger</div>
-          <div>fries</div>
-          <div>post</div>
-          <div>soda</div>
+        <nav className={styles.nav}>
+          <NavItem type={'burger'} size={50} />
+          <NavItem type={'fries'} size={50} />
+          <NavItem type={'drink'} size={50} />
+          <NavItem type={'dessert'} size={50} />
+          <NavItem type={'order'} size={50} />
         </nav>
       </footer>
     </div>
