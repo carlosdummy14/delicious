@@ -1,13 +1,16 @@
 @import "https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 
 :root {
   --color-bg: #f60000;
   --color-white: #eee;
   --color-dark: #333;
+  --color-button: #b7de0e;
   --color-guide-r: #f00a;
   --color-guide-g: #0f0a;
   --color-guide-b: #00fa;
   --font-family: "Alex Brush", cursive;
+  --font-text: "Roboto", sans-serif;
   --icon-size: 50px;
   --height-header: 6rem;
   --height-footer: 6rem;
@@ -18,18 +21,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: var(--font-text);
 }
 
 body {

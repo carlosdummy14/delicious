@@ -5,7 +5,7 @@ const ItemList = ({ items }) => {
   return (
     <section className={styles.list}>
       {items.map(item => (
-        <Item name={item} key={item} />
+        <Item {...item} key={item.name} />
       ))}
     </section>
   )

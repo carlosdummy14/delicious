@@ -1,5 +1,7 @@
 .list {
   width: 100%;
   overflow-y: auto;
-  padding: 0.3rem 1rem;
+  padding: 0 0.7rem 1rem 0.3rem;
+  background-image: url("/images/tablecloth.png");
+  background-repeat: repeat-y;
 }
