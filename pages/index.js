@@ -17,7 +17,13 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <Image src='/images/deli-burger.png' alt='burger' className={styles.image} layout='fill' />
+        <Image
+          src='/images/deli-burger.png'
+          alt='burger'
+          className={styles.image}
+          layout='fill'
+          objectFit='cover'
+        />
         <p className={styles['main-text']}>{`The best burger that you didn't see ever!!!`}</p>
       </main>
 
