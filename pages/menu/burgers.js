@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import ItemList from '../../components/items-list'
 import Layout from '../../components/layout'
 import { getItems } from '../../utils/menu'

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import AddIcon from './add-icon'
 import styles from './item.module.css'
 
-const Item = ({ image, name, resume, price }) => {
+const Item = ({ image, name, resume, price, handleClick }) => {
   return (
     <div className={styles.item}>
       <Image
@@ -12,6 +12,7 @@ const Item = ({ image, name, resume, price }) => {
         height={800}
         objectFit='cover'
         alt={name}
+        onClick={() => handleClick(name)}
       />
       <div className={styles.info}>
         <div className={styles.title}>{name}</div>
