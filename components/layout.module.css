@@ -46,4 +46,25 @@
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 0.9rem;
+  position: relative;
+}
+
+.total {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--color-button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1.1rem;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import AddIcon from './add-icon'
 import styles from './item.module.css'
+import { useAppContext } from '../context/state'
 
 const Item = ({ image, name, resume, price, handleClick }) => {
+  const { addItemToOrder } = useAppContext()
+
   return (
     <div className={styles.item}>
       <Image
@@ -17,10 +20,19 @@ const Item = ({ image, name, resume, price, handleClick }) => {
       <div className={styles.info}>
         <div className={styles.title}>{name}</div>
         <div className={styles.resume}>{resume}</div>
-        <div className={styles.price}>
+        <button
+          className={styles.price}
+          onClick={() =>
+            addItemToOrder({
+              image,
+              name,
+              price,
+            })
+          }
+        >
           <div>$ {price}</div>
           <AddIcon />
-        </div>
+        </button>
       </div>
     </div>
   )
