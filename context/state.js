@@ -5,6 +5,33 @@ const AppContext = createContext()
 export const AppWrapper = ({ children }) => {
   const [order, setOrder] = useState([])
 
+  const deleteItemOrder = itemToDelete => {
+    const orderUpdated = order.filter(item => item.name !== itemToDelete)
+    setOrder(orderUpdated)
+  }
+
+  const incrementItemOrder = itemToUpdate => {
+    const orderUpdated = order.map(item => {
+      if (item.name === itemToUpdate) {
+        return { ...item, qty: item.qty + 1 }
+      }
+      return item
+    })
+
+    setOrder(orderUpdated)
+  }
+
+  const decrementItemOrder = itemToUpdate => {
+    const orderUpdated = order.map(item => {
+      if (item.name === itemToUpdate) {
+        return { ...item, qty: item.qty - 1 < 1 ? 1 : item.qty - 1 }
+      }
+      return item
+    })
+
+    setOrder(orderUpdated)
+  }
+
   const addItemToOrder = itemReceived => {
     const { image, name, price } = itemReceived
 
@@ -31,6 +58,9 @@ export const AppWrapper = ({ children }) => {
   const newState = {
     order,
     addItemToOrder,
+    incrementItemOrder,
+    decrementItemOrder,
+    deleteItemOrder,
     totalItems: order.reduce((totalItems, item) => totalItems + item.qty, 0),
   }
 

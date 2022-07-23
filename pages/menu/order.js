@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ItemList from '../../components/items-list'
+import OrderList from '../../components/order-list'
 import Layout from '../../components/layout'
 import { useAppContext } from '../../context/state'
 
@@ -12,7 +12,7 @@ const Order = () => {
         <title>Delicious Your Order</title>
       </Head>
 
-      <ItemList items={order} />
+      <OrderList items={order} />
     </Layout>
   )
 }
