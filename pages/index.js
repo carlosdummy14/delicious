@@ -23,6 +23,7 @@ export default function Home() {
           className={styles.image}
           layout='fill'
           objectFit='cover'
+          priority
         />
         <p className={styles['main-text']}>{`The best burger that you didn't see ever!!!`}</p>
       </main>

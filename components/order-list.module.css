@@ -6,3 +6,11 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.total {
+  position: sticky;
+  bottom: -15px;
+  text-align: end;
+  font-size: 2rem;
+  background-color: white;
+}

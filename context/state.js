@@ -62,6 +62,7 @@ export const AppWrapper = ({ children }) => {
     decrementItemOrder,
     deleteItemOrder,
     totalItems: order.reduce((totalItems, item) => totalItems + item.qty, 0),
+    totalOrder: order.reduce((acum, item) => acum + item.qty * item.price, 0),
   }
 
   return <AppContext.Provider value={newState}>{children}</AppContext.Provider>
