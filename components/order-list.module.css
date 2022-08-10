@@ -12,5 +12,5 @@
   bottom: -15px;
   text-align: end;
   font-size: 2rem;
-  background-color: white;
+  background-color: var(--color-white);
 }
